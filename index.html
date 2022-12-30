@@ -11,72 +11,108 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!-- iconos boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Birthstone+Bounce:wght@500&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Sono:wght@500&family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script css Propio -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- <header class="text-center bg-dark row">
+      <div class="col-md-6 offset-md-3 text-white">
+        <h1 class="fs-3">⚡ESTUDIO DE TATUAJES⚡</h1>
+      </div>
+    </header> -->
+
     <!-- Nav Bar -->
-    <div class="container mt-2">
-      <nav class="navbar navbar-expand-lg bg-dark navBar" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./assets/img/logo.jpg"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />𝕷𝖎𝖔𝖓 𝖙𝖆𝖙𝖙𝖔 𝖘𝖙𝖚𝖉𝖎𝖔
-          </a>
-          <button
-            class="navbar-toggler bg-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
+    <nav
+      class="container-fluid navbar navbar-expand-lg navbar-dark navBarColor sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Inicio </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-theme="dark"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse container text-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item col">
+              <a class="nav-link disabled" href="#">⚡Accesorios⚡</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" href="#maquinas">⚡Maquinas⚡</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" href="#">⚡Tintas⚡</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link disabled" href="#">⚡Equipamientos⚡</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link disabled" href="#">⚡Artistas⚡</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link disabled" href="#">⚡Galeria⚡</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
     <!-- Fin Nav Bar -->
-    <!-- Slide -->
-    <section class="slide">
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+
+    <!-- Imagenes -->
+    <section class="imagenes mb-5">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="./assets/img/img1.webp" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="./assets/img/img2.webp" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src="./assets/img/img3.webp" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/img4.webp" class="d-block w-100" alt="..." />
           </div>
         </div>
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleFade"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,7 +121,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleFade"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -93,8 +129,627 @@
         </button>
       </div>
     </section>
-    <!-- Fin Slide -->
 
+    <!-- Fin Imagenes -->
+
+    <!-- Seccion iconos -->
+    <hr class="text-white" />
+    <section class="">
+      <div class="container text-center">
+        <div class="row justify-content-center text-white">
+          <div class="col">
+            <i class="bi bi-person-check iconInfo"></i>
+            <p>100% DE SATISFACCIÓN</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-shield-check iconInfo col"></i>
+            <p>CONTROL DE CALIDAD</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-send-check iconInfo col"></i>
+            <p>ENTREGA RÁPIDA</p>
+          </div>
+          <div class="col">
+            <i class="bi bi-award iconInfo col"></i>
+            <p>GARANTIA DE CALIDAD</p>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+    </section>
+    <!-- Seccion Main -->
+    <main>
+      <!-- Seccion Maquinas -->
+
+      <section class="justify-content-center mt-5" id="maquinas">
+        <div class="text-center mb-5 text-white">
+          <h2 class="display-2">Maquinas</h2>
+          <h4 class="container text-center">
+            Encuentra la máquina que más se acomode a tu estilo de trabajo.
+            Siempre con la mejor calidad y la seguridad y respaldo que TIENDA DE
+            TATUAJES te puede dar
+          </h4>
+        </div>
+      </section>
+      <section class="sectionCardsMaquina mb-5">
+        <!-- --- -->
+        <!-- ---- Maquina 1-->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/maquinas/maquina01.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              Máquina Bishop Power Wand Liner-RCA de 5,0 mm
+            </h5>
+            <hr />
+            <br />
+            <a
+              href=""
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModal"
+              >Detalles</a
+            >
+
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Modal MAquina1--- -->
+        <div class="modal fade" id="miModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/maquinas/maquina001.avif"
+                    class="card-img-top imgMaquina"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------------- -->
+        <!-- ---Maquina 2 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/maquinas/maquina02.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              The Valhalla Pen by AXYS Rotary is an all-purpose machine
+            </h5>
+            <hr />
+            <br />
+            <a
+              href=""
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModal2"
+              >Detalles</a
+            >
+
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Modal MAquina 2--- -->
+        <div class="modal fade" id="miModal2" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/maquinas/maquina002.avif"
+                    class="card-img-top imgMaquina"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ -->
+        <!-- --Maquina 3 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/maquinas/maquina003.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">
+              The Viper Rotary Machine a versatile rotary pen
+            </h5>
+            <hr />
+            <br />
+            <a
+              href=""
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModal3"
+              >Detalles</a
+            >
+
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+
+        <!-- Modal MAquina 3--- -->
+        <div class="modal fade" id="miModal3" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/maquinas/maquina03.avif"
+                    class="card-img-top imgMaquina"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seccion Tintas -->
+
+      <section class="justify-content-center mt-5">
+        <div class="text-center mb-5 text-white">
+          <h2 class="display-2">Tintas</h2>
+          <h4 class="container text-center">
+            ¡ Te traemos los colores más brillantes !
+          </h4>
+        </div>
+      </section>
+
+      <section class="sectionCardsMaquina mb-5">
+        <!-- Tinta 1 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/tintas/tinta001.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Negro Perfecto</h5>
+            <hr />
+            <br />
+            <a
+              href="#"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalTinta1"
+              >Detalles</a
+            >
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+        <!-- --Modal tinta 1 -->
+        <div class="modal fade" id="miModalTinta1" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/tintas/tinta01.avif"
+                    class="card-img-top imgMaquina1"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tinta 2 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/tintas/tinta02.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Ante Azul</h5>
+            <hr />
+            <br />
+            <a
+              href="#"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalTinta2"
+              >Detalles</a
+            >
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+        <!-- --Mi modal tinta 2 -->
+        <div class="modal fade" id="miModalTinta2" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/tintas/tinta002.avif"
+                    class="card-img-top imgMaquina1"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tinta 3 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/tintas/tinta03.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Pájaro Trueno</h5>
+            <hr />
+            <br />
+            <a
+              href="#"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalTinta3"
+              >Detalles</a
+            >
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+        <!-- -- Mi modal tinta 3-->
+        <div class="modal fade" id="miModalTinta3" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/tintas/tinta003.avif"
+                    class="card-img-top imgMaquina1"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tinta 4 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/tintas/tinta04.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Morado Oscuro</h5>
+            <hr />
+            <br />
+            <a
+              href="#"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalTinta4"
+              >Detalles</a
+            >
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+        <!-- -- Mi modal Tinta 4-->
+        <div class="modal fade" id="miModalTinta4" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/tintas/tinta004.avif"
+                    class="card-img-top imgMaquina1"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tinta 5 -->
+        <div class="card cardMaquina" style="width: 15rem">
+          <img
+            src="./assets/img/tintas/tinta05.avif"
+            class="card-img-top imgMaquina"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">Ciruela</h5>
+            <hr />
+            <br />
+            <a
+              href="#"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalTinta5"
+              >Detalles</a
+            >
+            <a href="#" class="btn btn-info">Comprar</a>
+          </div>
+        </div>
+        <!-- ---Mi modal tinta 5 -->
+        <div class="modal fade" id="miModalTinta5" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Máquina Bishop</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body row">
+                <div class="col-6">
+                  <img
+                    src="./assets/img/tintas/tinta005.avif"
+                    class="card-img-top imgMaquina1"
+                    alt="..."
+                    style="width: 15rem"
+                  />
+                </div>
+                <div class="col-6">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quis dignissimos fugiat, porro debitis cupiditate
+                    consequatur dicta, nam vero dolorem provident aperiam sint
+                    eum optio ipsam. Itaque nostrum praesentium excepturi
+                    dolore?
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+                <button type="button" class="btn btn-info">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="text-white" />
+    <hr class="text-white" />
+
+    <!-- Seccion ventanas Detalles -->
+
+    <!-- footer -->
+    <footer class="bg-dark text-white p-2 fs-5">
+      <div class="text-center p-2">
+        <nav class="d-flex justify-content-evenly">
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""><i class="bi bi-youtube"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-twitter"></i></a>
+          <a href=""><i class="bi bi-messenger"></i></a>
+        </nav>
+        <small class="">&copy; 2022 by Ernesto Gutierrez</small>
+      </div>
+    </footer>
+    <!-- Fin footer -->
     <!-- Boostrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
