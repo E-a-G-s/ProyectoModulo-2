@@ -2,6 +2,7 @@ body {
   margin: 1px;
   background-color: #63676b;
   font-family: "Trade Winds";
+  font-size: 18px;
  
 }
 
@@ -12,6 +13,13 @@ header {
   color: white;
   font-family: "Trade Winds", cursive;
 }
+
+/* Iconos */
+
+.icon:hover{
+color: black;
+}
+/* Navbar */
 .navBarColor {
   font-family: "Trade Winds", cursive;
   background: #424950ec;
@@ -27,9 +35,6 @@ header {
   margin: 1em;
 }
 
-.imgMaquina1:hover{
-  background-image: "../img/maquinas/maquina001.avif";
-}
 
 /* Seccion Tinta */
 .iconInfo {
@@ -37,18 +42,14 @@ header {
   color: rgba(255, 255, 255, 0.589);
 }
 
+
 /* Footer */
 
 footer a i {
   color: white;
 }
 
-/* Fin footer */
 
-/* Efecto area para texto "Precios válidos solo para venta online" */
-
-/* Fin efecto area 
-  
 
 /* 
 font-family: 'BhuTuka Expanded One', cursive;

@@ -1,0 +1,72 @@
+[
+
+{
+
+
+    "precio":50000,
+    "id":1,
+    "titulo":"Máquina Bishop",
+    "img":"./assets/img/imgApi/maquina1.png"
+},
+{
+
+
+    "precio":100000,
+    "id":2,
+    "titulo":"Máquina Bolígrafo Axys Valhalla",
+    "img":"./assets/img/imgApi/maquina2.png"
+},
+{
+
+
+    "precio":200000,
+    "id":3,
+    "titulo":"Máquina rotativa Viper",
+    "img":"./assets/img/imgApi/maquina3.png"
+},
+
+{
+
+
+    "precio":11000,
+    "id":4,
+    "titulo":"Perfect Black",
+    "img":"./assets/img/imgApi/tinta1.png"
+},
+
+{
+
+
+    "precio":11000,
+    "id":5,
+    "titulo":"Blue Suede",
+    "img":"./assets/img/imgApi/tinta2.png"
+},
+
+{
+
+
+    "precio":12000,
+    "id":6,
+    "titulo":"Thunderbird",
+    "img":"./assets/img/imgApi/tinta3.png"
+},
+
+{
+
+
+    "precio":13000,
+    "id":7,
+    "titulo":"Dark Purple",
+    "img":"./assets/img/imgApi/tinta4.png"
+},
+
+{
+
+
+    "precio":15000,
+    "id":8,
+    "titulo":"Plum",
+    "img":"./assets/img/imgApi/tinta5.png"
+}
+]
